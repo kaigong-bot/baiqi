@@ -23,20 +23,22 @@ class Picture():
 		self.canvas.create_text(self.w/2, 0.8*(self.h), text=str,font = titleFont)
 
 def callback3(event):
-	pass
+	pic.showpicture(3)
+	pic.showtext('这是第三张图')
+	
 
 def callback2(event):
-	
-    pic.showpicture(2)
-    pic.showtext('学长，我要袭警了')
+
+	pic.showpicture(2)
+	pic.showtext('这是第二张图')
 	pic.canvas.bind("<Button-1>", callback3)
 
-num=1
+
 app = Tk()
 app.title("Welcome")
 pic= Picture()
 pic.canvas.bind("<Button-1>", callback2)
 pic.showpicture(1)
-pic.showtext('学长，我要袭警了')
+pic.showtext('这是第一张图')
 
 app.mainloop()
