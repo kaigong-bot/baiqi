@@ -20,17 +20,27 @@ class Picture():
 	
 	def showtext(self,str):
 		titleFont = ('微软雅黑', 20, 'bold')
-		self.canvas.create_text(self.w/2, 0.8*(self.h), text=str,font = titleFont)
+		self.canvas.create_text(self.w/2, 0.75*(self.h), text=str,font = titleFont)
+	def showchoice(self,str1,str2):
+		titleFont = ('微软雅黑', 10, 'bold')
+		self.canvas.create_text(0.3*(self.w), 0.8*(self.h), text=str1,font = titleFont)
+		self.canvas.create_text(0.7*(self.w), 0.8*(self.h), text=str2,font = titleFont)
+
 
 def callback3(event):
-	pic.showpicture(3)
-	pic.showtext('这是第三张图')
-	
+	if (event.y>700)and(event.y<750):
+		if event.x<280:
+			pic.showpicture(3)
+			pic.showtext('这是第三张图')
+		else:
+			pic.showpicture(4)
+			pic.showtext('这是第四张图')
 
 def callback2(event):
 
 	pic.showpicture(2)
 	pic.showtext('这是第二张图')
+	pic.showchoice('三','四')
 	pic.canvas.bind("<Button-1>", callback3)
 
 
