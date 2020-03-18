@@ -1,0 +1,84 @@
+[
+  {
+    "id": 0,
+    "bg": "picture//1.jpg",
+    "dialogue": [
+      {
+        "people": "cat",
+        "word": "喵喵喵~ 臭老鼠别跑"
+      },
+      {
+        "people": "mouse",
+        "word": "吱吱吱~ 略略略抓不到我"
+      }
+    ],
+    "options": [
+      {
+        "option": "下一个",
+        "to": 1
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "bg": "picture//2.jpg",
+    "dialogue": [
+      {
+        "people": "mouse",
+        "word": "吱吱吱~ 嘿嘿，我到家了"
+      },
+      {
+        "people": "cat",
+        "word": "喵喵喵~ 好吧，那我只好走了。。我真的走了哦"
+      },
+      {
+        "people": "mouse",
+        "word": "吱吱吱~ 我要不要出去吃东西呢"
+      }
+    ],
+    "options": [
+      {
+        "option": "食物太香了，我要出去吃掉它",
+        "to": 2
+      },
+      {
+        "option": "算了吧，安全第一",
+        "to": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "bg": "picture//3.jpg",
+    "dialogue": [
+      {
+        "people": "mouse",
+        "word": "吱吱吱~ 臭猫走了，那我又可以吃东西了"
+      },
+      {
+        "people": "cat",
+        "word": "喵喵喵~ 哈哈哈哈，我骗你的，傻瓜"
+      },
+      {
+        "people": "mouse",
+        "word": "吱吱吱~吱吱吱~ 救命……啊啊啊啊！！！！！！！！"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 3,
+    "bg": "picture//4.jpg",
+    "dialogue": [
+      {
+        "people": "mouse",
+        "word": "吱吱吱~ 你想骗我，哈哈，我才不上当呢"
+      },
+      {
+        "people": "cat",
+        "word": "喵喵喵~ 可恶！可恶！可恶！"
+      }
+    ],
+    "options": []
+  }
+]
